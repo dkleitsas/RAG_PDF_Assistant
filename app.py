@@ -38,10 +38,11 @@ st.markdown("""
         margin-bottom: 2rem;
     }
     .info-box {
-        background-color: #f0f2f6;
+        background-color: #e8eef5;
         padding: 1rem;
         border-radius: 0.5rem;
         border-left: 4px solid #1f77b4;
+        border: 1px solid #d1d9e0;
     }
     .success-box {
         background-color: #d4edda;
