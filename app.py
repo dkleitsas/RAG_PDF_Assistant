@@ -198,7 +198,7 @@ def main():
     if not st.session_state.documents_loaded:
         st.markdown("""
         <div class="info-box">
-            <h3>🚀 Getting Started</h3>
+            <h3> Getting Started</h3>
             <ol>
                 <li>Upload your PDF documents using the sidebar</li>
                 <li>Click "Process Documents" to extract and index the content</li>
@@ -207,12 +207,12 @@ def main():
         </div>
         """, unsafe_allow_html=True)
         
-        st.markdown("### 💡 Example Questions")
+        st.markdown("### Example Questions")
         st.markdown("""
         - "What are the main safety procedures mentioned in the manual?"
-        - "How do I troubleshoot common issues?"
-        - "What are the specifications for the equipment?"
-        - "What maintenance procedures are required?"
+        - "What do I need to know about taking out a credit card with this bank?"
+        - "What methodologies are used in this research paper?"
+        - "Which of these candidates have relevant ML experience?"
         """)
         
     else:
@@ -227,15 +227,15 @@ def main():
         similarity_threshold = 0.6
         temperature = 0.1
         
-        if st.button("🔍 Ask Question", type="primary", disabled=not question.strip()):
+        if st.button(" Ask Question", type="primary", disabled=not question.strip()):
             if question.strip():
-                with st.spinner("🤖 Generating answer..."):
+                with st.spinner(" Generating answer..."):
                     result = st.session_state.qa_system.ask_question(question, similarity_threshold)
                     
                     if result.get("error"):
                         st.error(f"Error: {result['error']}")
                     else:
-                        st.markdown("### 💬 Answer")
+                        st.markdown("### Answer")
                         st.markdown(result["answer"])
                         
                         if result["sources"]:
