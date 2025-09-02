@@ -1,6 +1,6 @@
 # Multi-Document AI Assistant
 
-A powerful AI assistant capable of answering questions from multiple PDF manuals with source citations using LangChain, FAISS, and Google Gemini 2.0 Flash Lite.
+A powerful AI assistant capable of answering questions from multiple PDF manuals with source citations using LangChain, FAISS, and Google Gemini 2.0 Flash Lite. Give it a try [here!](https://pdf-assistant-rag.streamlit.app/) (Might take a second to load.)
 
 Note: Still a WIP, the retrieval component could frankly be a lot better. Also bear in mind a lower end LLM model is used due to cost constraints so please verify any answer you get from this.
  
