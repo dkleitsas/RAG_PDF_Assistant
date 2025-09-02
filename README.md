@@ -2,6 +2,8 @@
 
 A powerful AI assistant capable of answering questions from multiple PDF manuals with source citations using LangChain, FAISS, and Google Gemini 2.0 Flash Lite.
 
+Note: Still a WIP, the retrieval component could frankly be a lot better. Also bear in mind a lower end LLM model is used due to cost constraints so please verify any answer you get from this.
+ 
 ## Features
 
 - **Multi-PDF Processing**: Upload and process multiple PDF documents
@@ -11,30 +13,6 @@ A powerful AI assistant capable of answering questions from multiple PDF manuals
 - **Streamlit Web Interface**: User-friendly web application
 - **Google Gemini 2.0 Flash Lite Integration**: Advanced language model for accurate responses
 
-## Installation
-
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Create a `.env` file with your Google API key:
-   ```
-   GOOGLE_API_KEY=your_api_key_here
-   ```
-
-## Usage
-
-1. Run the Streamlit application:
-   ```bash
-   streamlit run app.py
-   ```
-
-2. Upload your PDF documents in the web interface
-
-3. Ask questions about the uploaded documents
-
-4. Get answers with source citations
 
 ## Project Structure
 
@@ -53,9 +31,3 @@ A powerful AI assistant capable of answering questions from multiple PDF manuals
 4. **Vector Storage**: Embeddings are stored in FAISS for fast retrieval
 5. **Question Answering**: User questions are processed through the retrieval-augmented generation pipeline
 6. **Source Citation**: Relevant source documents are cited in responses
-
-## Requirements
-
-- Python 3.8+
-- Google API key
-- Internet connection for API calls
