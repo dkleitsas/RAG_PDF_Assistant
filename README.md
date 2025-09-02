@@ -3,6 +3,9 @@
 A powerful AI assistant capable of answering questions from multiple PDF manuals with source citations using LangChain, FAISS, and Google Gemini 2.0 Flash Lite. Give it a try [here!](https://pdf-assistant-rag.streamlit.app/) (Might take a second to load.)
 
 Note: Still a WIP, the retrieval component could frankly be a lot better. Also bear in mind a lower end LLM model is used due to cost constraints so please verify any answer you get from this.
+
+<img width="1855" height="742" alt="image" src="https://github.com/user-attachments/assets/fb23b9f7-7066-4370-84f4-8d8aa2eb508f" />
+
  
 ## Features
 
