@@ -38,11 +38,26 @@ st.markdown("""
         margin-bottom: 2rem;
     }
     .info-box {
-        background-color: #e8eef5;
+        background-color: #e8eef5 !important;
         padding: 1rem;
         border-radius: 0.5rem;
         border-left: 4px solid #1f77b4;
         border: 1px solid #d1d9e0;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+        .info-box {
+            background-color: #2d3748 !important;
+            border: 1px solid #4a5568 !important;
+            color: #e2e8f0 !important;
+        }
+    }
+    
+    [data-theme="dark"] .info-box,
+    .stApp[data-theme="dark"] .info-box {
+        background-color: #2d3748 !important;
+        border: 1px solid #4a5568 !important;
+        color: #e2e8f0 !important;
     }
     .success-box {
         background-color: #d4edda;
